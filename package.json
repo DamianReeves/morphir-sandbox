@@ -1,0 +1,19 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "@types/bun": "latest",
+    "elm-tooling": "^1.15.1",
+    "morphir-elm": "^2.89.0"
+  },
+  "name": "morphir-sandbox",
+  "module": "index.ts",
+  "type": "module",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "postinstall": "elm-tooling install",
+    "hello-bun": "bun index.ts",
+    "elm-make": "elm make src/Morphir/Sandbox/Main.elm --output=dist/app.js"
+  }
+}
