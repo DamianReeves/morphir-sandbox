@@ -14,6 +14,7 @@
   "scripts": {
     "postinstall": "elm-tooling install",
     "hello-bun": "bun index.ts",
-    "elm-make": "elm make src/Morphir/Sandbox/Main.elm --output=dist/app.js"
+    "elm-make": "elm make src/Morphir/Sandbox/Main.elm --output=dist/app.js",
+    "morphir-make": "morphir make -o dist/models"
   }
 }
