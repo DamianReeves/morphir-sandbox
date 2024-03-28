@@ -259,6 +259,11 @@ case "$subcommand" in
 	"fmt")
 		moon run :fmt
 		;;
+	"install")
+		require_bun
+		require_moon
+		bun install
+		;;
 	"lint")
 		moon run :lint
 		;;
