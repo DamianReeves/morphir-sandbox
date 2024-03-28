@@ -270,6 +270,9 @@ case "$subcommand" in
 	"purge")
 		moon run :clean && moon clean
 		;;
+	"rebuild")
+		moon run ":rebuild"
+		;;
 	"run")
 		moon run "${leftovers[@]}"
 		;;

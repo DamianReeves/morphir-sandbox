@@ -1,0 +1,7 @@
+tasks:
+  elm-library-build:
+    command: |
+      elm make "@files(elmSources)"
+    inputs:
+      - "elm.json"
+      - "@globs(elmSources)"

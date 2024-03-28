@@ -1,14 +1,10 @@
 tasks:
-  build:
-    description: "Build the project"
-    deps:
-      - "~:morphir-elm-build"
-
   clean:
     deps:
       - "~:morphir-elm-clean"
 
 tags:
   - "elm"
+  - "elm-library"
   - "morphir"
   - "morphir-elm"
