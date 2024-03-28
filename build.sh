@@ -250,17 +250,29 @@ fi
 
 
 case "$subcommand" in
+	"build")
+		moon run :build
+		;;
+	"clean")
+		moon run :clean
+		;;
 	"fmt")
-		echo "TODO: Implement fmt command"
+		moon run :fmt
 		;;
 	"lint")
-		echo "TODO: Implement lint command"
+		moon run :lint
+		;;
+	"purge")
+		moon run :clean && moon clean
+		;;
+	"run")
+		moon run "${leftovers[@]}"
 		;;
 	"setup")
 		echo "TODO: Implement setup command"
 		;;
 	"test")
-		echo "TODO: Implement test command"
+		moon run :test
 		;;
 	"about")
 		echo "TODO: Implement about command"

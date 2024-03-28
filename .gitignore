@@ -6,3 +6,6 @@ dist/
 
 morphir-ir.json
 morphir-hashes.json
+# moon
+.moon/cache
+.moon/docker
